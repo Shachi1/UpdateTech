@@ -32,16 +32,15 @@ threading.Thread(target=matplotlib.pyplot.ion()).start()
 @sync_to_async
 
 def generate_chart(request):
-    labels = ['Label 1', 'Label 2', 'Label 3']
-    sizes = [30, 50, 20]
-    colors = ['red', 'green', 'blue']
+    labels = ['East', 'West', 'South', 'Central']
+    sizes = [20, 25, 30, 25]
+    colors = ['red', 'green', 'blue', 'yellow']
 
     plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=90)
     plt.axis('equal')  # Equal aspect ratio ensures the pie chart appears as a circle
 
     # Save the chart to a temporary file
-    # chart_path = './images/chart.png'
-    chart_path = '/Users/cio/UpdateTech/Task2/sales/templates/pie.png'
+    chart_path = '/Users/cio/UpdateTech/Task2/static/pie.png'
     plt.savefig(chart_path)
 
 
@@ -57,7 +56,7 @@ def generate_chart(request):
     plt.title('Line Chart')
 
     # Save the chart to a temporary file
-    chart_image_path = '/Users/cio/UpdateTech/Task2/sales/templates/line.png'
+    chart_image_path = '/Users/cio/UpdateTech/Task2/static/line.png'
     plt.savefig(chart_image_path)
 
 
