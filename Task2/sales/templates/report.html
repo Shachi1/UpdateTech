@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Report</title>
+</head>
+<body>
+    <h1>PDF Report</h1>
+    <p>Total number of orders count per year:</p>
+    <p>Total count of distinct customers:</p>
+    <p>Top 3 customers who have ordered the most with their total amount of transactions.:</p>
+    <p>Customer Transactions per Year (from the beginning year to last year):</p>
+    <p>Most selling items sub-category names:</p>
+    <img src="{% static 'pie.png' %}" alt="Pie Chart"><br>
+    <img src="{% static 'line.png' %}" alt="Line Chart">
+</body>
+</html>
