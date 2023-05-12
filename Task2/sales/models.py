@@ -16,3 +16,6 @@ class SalesModel(models.Model):
     sub_category = models.CharField(max_length=20)
     region = models.CharField(max_length=10)
     sales = models.FloatField()
+
+    def __str__(self):
+        return self.id
