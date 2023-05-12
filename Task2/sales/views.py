@@ -29,7 +29,7 @@ matplotlib.interactive(False)
 matplotlib.pyplot.switch_backend('agg')
 threading.Thread(target=matplotlib.pyplot.ion()).start()
 
-@sync_to_async
+# @sync_to_async
 
 def generate_chart(request):
     labels = ['East', 'West', 'South', 'Central']
@@ -46,8 +46,8 @@ def generate_chart(request):
 
 
     # Data for the line chart
-    x = [1, 2, 3, 4, 5]
-    y = [10, 25, 15, 30, 20]
+    x = [10, 20, 30, 40]
+    y = [10, 25, 15, 30]
 
     # Generate the line chart
     plt.plot(x, y)
