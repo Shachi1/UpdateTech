@@ -11,7 +11,7 @@ Task1:
 Code: Here the app named "api" implements login and registration API with DRF. In models.py, an Entity has been created for the user model using AbstractBaseUser class. In managers.py, a custom user manager has been created using BaseUserManager. Only the fields required for login and registration is added. views.py has UserDetailAPI class that gets user details using token authentication and RegisterUserAPIView class that registers user.
 
 Output: 
-The root directory takes to the Login page. Log in with email "shachi@gmail.com" and password "T@CVe46yeusXszM8higD".
+The root directory takes to the Login page. Log in with email "*****@gmail.com" and password "****".
 this will direct you to home page. Click the add button to register new user.
 
 Task2:
